@@ -1,13 +1,16 @@
 {
 	"name": "jover/drupal-pre-commit",
-	"description": "A Git pre-commit hook to check Drupal Coding Standards and more.",
 	"type": "library",
+	"description": "A Git pre-commit hook to check Drupal Coding Standards and more.",
+	"keywords": ["drupal","pre-commit","coding standards","php"],
 	"homepage": "https://github.com/jover/drupal-pre-commit",
 	"license": "MIT",
 	"authors": [
 		{
 			"name": "jover",
-			"homepage": "http://www.jover.be"
+			"email": "hello@jover.be",
+			"homepage": "http://www.jover.be",
+			"role": "Developer"
 		}
 	],
 	"require": {
@@ -21,8 +24,8 @@
 		]
 	},
 	"scripts": {
-		"pre-install-cmd": {
+		"pre-install-cmd": [
 			"jover\\drupal_pre_commit\\GitHooks::create"
-		}
+		]
 	}
 }
