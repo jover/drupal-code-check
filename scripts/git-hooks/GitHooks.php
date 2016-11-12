@@ -2,10 +2,10 @@
 
 /**
  * @file
- * Contains \jover\drupal_pre_commit\GitHooks.
+ * Contains \jover_be\drupal_pre_commit\GitHooks.
  */
 
-namespace jover\drupal_pre_commit;
+namespace jover_be\drupal_pre_commit;
 
 use Composer\Script\Event;
 use Symfony\Component\Filesystem\Filesystem;
