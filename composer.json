@@ -16,9 +16,9 @@
 		"squizlabs/php_codesniffer": "2.*"
 	},
 	"autoload": {
-		"classmap": {
+		"classmap": [
 			"scripts/git-hooks/GitHooks.php"
-		}
+		]
 	},
 	"scripts": {
 		"pre-install-cmd": {
