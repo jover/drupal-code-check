@@ -1,0 +1,14 @@
+#!/usr/bin/php
+<?php
+
+/**
+ * .git/hooks/pre-commit
+ * 
+ * @author  jover  http://github.com/jover
+ * 
+ */
+
+require __DIR__ . '/pre-commit.php';
+
+$app = new DrupalCodeCheckApplication();
+$app->run();

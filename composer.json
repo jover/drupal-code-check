@@ -1,0 +1,19 @@
+{
+    "name": "jover/drupal-pre-commit",
+    "description": "A Git pre-commit hook to check Drupal Coding Standards and more.",
+    "require": {
+        "php": ">=5.4",
+        "drupal/coder": "~8.2",
+        "squizlabs/php_codesniffer": "2.*"
+    },
+    "autoload": {
+    	"classmap": {
+    		"scripts/git-hooks/GitHooks.php"
+    	}
+    },
+    "scripts": {
+    	"pre-install-cmd": {
+    		"jover\\drupal_pre_commit\\GitHooks::create"
+    	}
+    }
+}
