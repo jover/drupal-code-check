@@ -18,7 +18,7 @@ class GitHooks {
 
   protected static function getGitHooksOriginDirectory() {
     $project_root = static::getProjectRoot();
-    return $project_root . '/scripts/git-hooks';
+    return $project_root . '/vendor/jover_be/drupal-pre-commit/git-hooks';
   }
 
   protected static function getGitHooksTargetDirectory() {
@@ -33,6 +33,7 @@ class GitHooks {
 
     $git_hooks = [
       'pre-commit',
+      'pre-commit.php',
     ];
 
     foreach ($git_hooks as $git_hook) {
