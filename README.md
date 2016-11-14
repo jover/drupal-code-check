@@ -10,12 +10,18 @@ This Git pre-commit hook will be active on your Composer based Drupal project.
 
 Things which will be checked in the pre-commit hook:
 
-* Syntax checking using "PHP Linter"
-* Automatically try to match code style via "PHP Code Sniffer Beautifier and Fixer"
-* Coding standards checking using "PHP Code Sniffer"
+* Syntax checking using _PHP Linter_
+* Automatically try to match code style via _PHP Code Sniffer Beautifier and Fixer_
+* Coding standards checking using _PHP Code Sniffer_
 * Blacklisted functions checking/validation
 
-Note that files of Drupal Core & Contributed Modules, Contributed Libraries, Contributed Themes & Contributed Profiles are not being checked.
+Note that files of the following origins are **not checked**:
+
+* Drupal Core
+* Contributed Modules
+* Contributed Libraries
+* Contributed Themes
+* Contributed Profiles
 
 ## Getting started
 
