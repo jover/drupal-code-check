@@ -5,7 +5,7 @@
  * Drupal Code Check Application, to be used as a Git pre-commit hook.
  */
 
-require __DIR__ . '../../../../vendor/autoload.php';
+require __DIR__ . '/../../../../vendor/autoload.php';
 
 use Symfony\Component\Console\Application;
 use Symfony\Component\Console\Input\InputInterface;
