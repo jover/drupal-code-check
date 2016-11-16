@@ -405,7 +405,7 @@ class DrupalBlacklistedFunctionsCheck extends DrupalCodeCheck {
     }
 
     // \b = Any word boundary.
-    $pattern = '/\b(' . implode(')|(', $checks) . ')/';
+    $pattern = '/\b(' . implode(')|\b(', $checks) . ')/';
 
     if ($matches = preg_match_all($pattern, $file_contents, $output_array)) {
       $checks_found = [];
