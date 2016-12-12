@@ -264,7 +264,7 @@ class DrupalPhpCodeCheck extends DrupalCodeCheck {
 
     $processBuilder = new ProcessBuilder([
       self::PHPCBF_BIN,
-      '--standard=Drupal',
+      '--standard=./vendor/jover_be/drupal-pre-commit/DrupalCodeCheck',
       '-p',
       $file,
     ]);
@@ -307,7 +307,7 @@ class DrupalPhpCodeCheck extends DrupalCodeCheck {
 
     $processBuilder = new ProcessBuilder([
       self::PHPCS_BIN,
-      '--standard=Drupal',
+      '--standard=./vendor/jover_be/drupal-pre-commit/DrupalCodeCheck',
       '-p',
       $file,
     ]);
@@ -361,27 +361,6 @@ class DrupalBlacklistedFunctionsCheck extends DrupalCodeCheck {
    */
   protected static function getChecks() {
     return [
-      // PHP Blacklisted functions.
-      'die(',
-      'print_r(',
-      'var_dump(',
-      // Drupal's build-in debugging functions.
-      'debug(',
-      // Devel's module debugging functions.
-      'dd(',
-      'ddebug_backtrace(',
-      'dpm(',
-      'dpq(',
-      'dpr(',
-      'dprint_r(',
-      'drupal_debug(',
-      'dsm(',
-      'dvm(',
-      'dvr(',
-      'kdevel_print_object(',
-      'kpr(',
-      'kprint_r(',
-      'krumo(',
       // JavaScript debugging functions.
       'alert(',
       'console.log(',
