@@ -14,26 +14,26 @@ class DrupalCodeCheck_Sniffs_PHP_ForbiddenFunctionsSniff extends Generic_Sniffs_
    */
   public $forbiddenFunctions = array(
     // PHP Blacklisted functions.
-    'die',
-    'print_r',
-    'var_dump',
+    'die' => null,
+    'print_r' => null,
+    'var_dump' => null,
     // Drupal's build-in debugging functions.
-    'debug',
+    'debug' => null,
     // Devel's module debugging functions.
-    'dd',
-    'ddebug_backtrace',
-    'dpm',
-    'dpq',
-    'dpr',
-    'dprint_r',
-    'drupal_debug',
-    'dsm',
-    'dvm',
-    'dvr',
-    'kdevel_print_object',
-    'kpr',
-    'kprint_r',
-    'krumo',
+    'dd' => null,
+    'ddebug_backtrace' => null,
+    'dpm' => null,
+    'dpq' => null,
+    'dpr' => null,
+    'dprint_r' => null,
+    'drupal_debug' => null,
+    'dsm' => null,
+    'dvm' => null,
+    'dvr' => null,
+    'kdevel_print_object' => null,
+    'kpr' => null,
+    'kprint_r' => null,
+    'krumo' => null,
   );
 
 }//end class
