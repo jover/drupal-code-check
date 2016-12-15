@@ -12,28 +12,48 @@ class DrupalCodeCheck_Sniffs_PHP_ForbiddenFunctionsSniff extends Generic_Sniffs_
   /**
    * {@inheritdoc}
    */
+  public $supportedTokenizers = array(
+    'PHP',
+  );
+
+  /**
+   * {@inheritdoc}
+   */
   public $forbiddenFunctions = array(
     // PHP Blacklisted functions.
-    'die' => null,
-    'print_r' => null,
-    'var_dump' => null,
+    'die'                 => null,
+    'print_r'             => null,
+    'var_dump'            => null,
     // Drupal's build-in debugging functions.
-    'debug' => null,
-    // Devel's module debugging functions.
-    'dd' => null,
-    'ddebug_backtrace' => null,
-    'dpm' => null,
-    'dpq' => null,
-    'dpr' => null,
-    'dprint_r' => null,
-    'drupal_debug' => null,
-    'dsm' => null,
-    'dvm' => null,
-    'dvr' => null,
+    'debug'               => null,
+    // Devel module debugging functions.
+    'dargs'               => null,
+    'dcp'                 => null,
+    'dd'                  => null,
+    'ddebug_backtrace'    => null,
+    'dfb'                 => null,
+    'dfbt'                => null,
+    'dpm'                 => null,
+    'dpq'                 => null,
+    'dpr'                 => null,
+    'dprint_r'            => null,
+    'drupal_debug'        => null,
+    'dsm'                 => null,
+    'dvm'                 => null,
+    'dvr'                 => null,
     'kdevel_print_object' => null,
-    'kpr' => null,
-    'kprint_r' => null,
-    'krumo' => null,
+    'kpr'                 => null,
+    'kprint_r'            => null,
+    'krumo'               => null,
+    'sdpm'                => null,
+    // Functions which are not available on all
+    // PHP builds.
+    'fnmatch'             => null,
   );
+
+  /**
+   * {@inheritdoc}
+   */
+  public $error = true;
 
 }//end class

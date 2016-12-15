@@ -2,5 +2,4 @@
 <ruleset name="DrupalCodeCheck">
     <description>Drupal Code Check enforcement rule set for PHP_CodeSniffer</description>
     <rule ref="Drupal" />
-    <rule ref="DrupalCodeCheck.PHP.ForbiddenFunctions" />
 </ruleset>
