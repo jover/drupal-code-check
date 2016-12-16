@@ -21,18 +21,12 @@ class DrupalCodeCheck_Sniffs_JS_ForbiddenFunctionsSniff extends Generic_Sniffs_P
    */
   public $forbiddenFunctions = array(
     // JavaScript debugging functions.
-    'alert'       => null,
-    'console\\.log' => null,
+    'alert' => null,
   );
-
-  /**
-   * {@inheritdoc}
-   */
-  protected $patternMatch = false;
 
   /**
    * {@inheritdoc}
    */
   public $error = true;
 
-}
+}//end class
