@@ -2,7 +2,7 @@
 
 A Git pre-commit hook to check Drupal Coding Standards and more.
 
-[![Latest Stable Version](https://poser.pugx.org/jover_be/drupal-code-check/v/stable)](https://packagist.org/packages/jover_be/drupal-code-check) [![Total Downloads](https://poser.pugx.org/jover_be/drupal-code-check/downloads)](https://packagist.org/packages/jover_be/drupal-code-check) [![Latest Unstable Version](https://poser.pugx.org/jover_be/drupal-code-check/v/unstable)](https://packagist.org/packages/jover_be/drupal-code-check) [![License](https://poser.pugx.org/jover_be/drupal-code-check/license)](https://packagist.org/packages/jover_be/drupal-code-check)
+[![Latest Stable Version](https://poser.pugx.org/jover_be/drupal-code-check/v/stable)](https://packagist.org/packages/jover_be/drupal-code-check) [![Total Downloads](https://poser.pugx.org/jover_be/drupal-code-check/downloads)](https://packagist.org/packages/jover_be/drupal-code-check) [![Latest Unstable Version](https://poser.pugx.org/jover_be/drupal-code-check/v/unstable)](https://packagist.org/packages/jover_be/drupal-code-check) [![License](https://poser.pugx.org/jover_be/drupal-code-check/license)](https://packagist.org/packages/jover_be/drupal-code-check) [![composer.lock](https://poser.pugx.org/jover_be/drupal-code-check/composerlock)](https://packagist.org/packages/jover_be/drupal-code-check)
 
 ## Description
 

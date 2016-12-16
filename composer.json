@@ -1,7 +1,7 @@
 {
 	"name": "jover_be/drupal-code-check",
 	"type": "library",
-	"description": "A Git code-check hook to check Drupal Coding Standards and more.",
+	"description": "A Git pre-commit hook to check Drupal Coding Standards and more.",
 	"keywords": ["drupal","git","pre-commit","standards","phpcs","code review"],
 	"homepage": "https://github.com/jover/drupal-code-check",
 	"license": "MIT",
