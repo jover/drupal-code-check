@@ -339,31 +339,28 @@ class DrupalPhpCodeCheck extends DrupalCodeCheck {
 }
 
 /**
- * Drupal Blacklisted Functions Check class.
+ * Drupal Blacklisted Strings Check class.
  */
-class DrupalBlacklistedFunctionsCheck extends DrupalCodeCheck {
+class DrupalBlacklistedStringsCheck extends DrupalCodeCheck {
 
   /**
    * {@inheritdoc}
    */
   protected function bootstrapMessage() {
-    $this->output->writeln('*************************************************');
-    $this->output->writeln('*   DRUPAL CODE - BLACKLISTED FUNCTIONS CHECK   *');
-    $this->output->writeln('*************************************************');
+    $this->output->writeln('***********************************************');
+    $this->output->writeln('*   DRUPAL CODE - BLACKLISTED STRINGS CHECK   *');
+    $this->output->writeln('***********************************************');
     $this->output->writeln('');
   }
 
   /**
-   * Returns an array with the checks / blacklisted functions.
+   * Returns an array with the checks / blacklisted strings.
    *
    * @return array
-   *   An array with all the blacklisted functions.
+   *   An array with all the blacklisted strings.
    */
   protected static function getChecks() {
     return [
-      // JavaScript debugging functions.
-      'alert(',
-      'console.log(',
       // Code conflicts resulting from Git merge.
       '<<<<<<<',
       '>>>>>>>',
@@ -430,7 +427,7 @@ class DrupalCodeCheckApplication extends Application {
    * {@inheritdoc}
    */
   public function __construct() {
-    parent::__construct('Drupal Code Check', '0.0.1');
+    parent::__construct('Drupal Code Check', '0.0.6');
   }
 
   /**
@@ -450,9 +447,9 @@ class DrupalCodeCheckApplication extends Application {
       $this->succeed = FALSE;
     }
 
-    $drupal_blacklisted_functions_check = new DrupalBlacklistedFunctionsCheck();
-    $drupal_blacklisted_functions_check->run($this->input, $this->output);
-    if (!$drupal_blacklisted_functions_check->getSucceed()) {
+    $drupal_blacklisted_strings_check = new DrupalBlacklistedStringsCheck();
+    $drupal_blacklisted_strings_check->run($this->input, $this->output);
+    if (!$drupal_blacklisted_strings_check->getSucceed()) {
       $this->succeed = FALSE;
     }
 
@@ -473,7 +470,7 @@ class DrupalCodeCheckApplication extends Application {
     $this->output->writeln('*   I.   Syntax checking using PHP Linter                             *');
     $this->output->writeln('*   IIa. Automatically try to match code style via PHPCBF             *');
     $this->output->writeln('*   IIb. Coding standards checking using PHP Code Sniffer             *');
-    $this->output->writeln('*   III. Blacklisted functions checking/validation.                   *');
+    $this->output->writeln('*   III. Blacklisted strings checking/validation.                     *');
     $this->output->writeln('*                                                                     *');
     $this->output->writeln('***********************************************************************');
     $this->output->writeln('');
