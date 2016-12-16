@@ -26,10 +26,10 @@
 	},
 	"scripts": {
 		"pre-install-cmd": [
-			"jover_be\\drupal_pre_commit\\GitHooks::create"
+			"jover_be\\drupal_code_check\\GitHooks::create"
 		],
 		"post-update-cmd": [
-            "jover_be\\drupal_pre_commit\\GitHooks::create"
+            "jover_be\\drupal_code_check\\GitHooks::create"
         ]
 	}
 }
