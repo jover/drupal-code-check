@@ -1,8 +1,8 @@
-# Drupal pre-commit
+# Drupal Code Check
 
 A Git pre-commit hook to check Drupal Coding Standards and more.
 
-[![Latest Stable Version](https://poser.pugx.org/jover_be/drupal-pre-commit/v/stable)](https://packagist.org/packages/jover_be/drupal-pre-commit) [![Total Downloads](https://poser.pugx.org/jover_be/drupal-pre-commit/downloads)](https://packagist.org/packages/jover_be/drupal-pre-commit) [![Latest Unstable Version](https://poser.pugx.org/jover_be/drupal-pre-commit/v/unstable)](https://packagist.org/packages/jover_be/drupal-pre-commit) [![License](https://poser.pugx.org/jover_be/drupal-pre-commit/license)](https://packagist.org/packages/jover_be/drupal-pre-commit)
+[![Latest Stable Version](https://poser.pugx.org/jover_be/drupal-code-check/v/stable)](https://packagist.org/packages/jover_be/drupal-code-check) [![Total Downloads](https://poser.pugx.org/jover_be/drupal-code-check/downloads)](https://packagist.org/packages/jover_be/drupal-code-check) [![Latest Unstable Version](https://poser.pugx.org/jover_be/drupal-code-check/v/unstable)](https://packagist.org/packages/jover_be/drupal-code-check) [![License](https://poser.pugx.org/jover_be/drupal-code-check/license)](https://packagist.org/packages/jover_be/drupal-code-check)
 
 ## Description
 
@@ -36,13 +36,13 @@ Note that files of the following origins are **not checked**:
 Add this project as a composer dependency on your Composer based Drupal project.
 
 ```bash
-composer require jover_be/drupal-pre-commit
+composer require jover_be/drupal-code-check
 ```
 
 And don't forget to update...
 
 ```bash
-composer update jover_be/drupal-pre-commit
+composer update jover_be/drupal-code-check
 ```
 
 In order to activate the Git Hooks, update your composer.json file like following:

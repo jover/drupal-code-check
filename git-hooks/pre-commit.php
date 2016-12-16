@@ -264,7 +264,7 @@ class DrupalPhpCodeCheck extends DrupalCodeCheck {
 
     $processBuilder = new ProcessBuilder([
       self::PHPCBF_BIN,
-      '--standard=./vendor/jover_be/drupal-pre-commit/DrupalCodeCheck',
+      '--standard=./vendor/jover_be/drupal-code-check/DrupalCodeCheck',
       '-p',
       $file,
     ]);
@@ -307,7 +307,7 @@ class DrupalPhpCodeCheck extends DrupalCodeCheck {
 
     $processBuilder = new ProcessBuilder([
       self::PHPCS_BIN,
-      '--standard=./vendor/jover_be/drupal-pre-commit/DrupalCodeCheck',
+      '--standard=./vendor/jover_be/drupal-code-check/DrupalCodeCheck',
       '-p',
       $file,
     ]);
