@@ -13,7 +13,7 @@ Things which will be checked in the pre-commit hook:
 * Syntax checking using _PHP Linter_
 * Automatically try to match code style via _PHP Code Sniffer Beautifier and Fixer_
 * Coding standards checking using _PHP Code Sniffer_
-* Blacklisted functions checking/validation
+* Blacklisted strings checking/validation
 
 Note that files of the following origins are **not checked**:
 
