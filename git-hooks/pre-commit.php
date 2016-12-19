@@ -128,7 +128,7 @@ abstract class DrupalCodeCheck extends Application {
     // YAML files.
       'yml',
     ];
-    $extension_pattern = '/(\.' . implode(')|(\.', $allowed_extensions) . ')$/';
+    $extension_pattern = '/(\.' . implode('$)|(\.', $allowed_extensions) . '$)/';
 
     $excluded_paths = [
     // Drupal core files.
@@ -431,7 +431,7 @@ class DrupalCodeCheckApplication extends Application {
    * {@inheritdoc}
    */
   public function __construct() {
-    parent::__construct('Drupal Code Check', '0.0.9');
+    parent::__construct('Drupal Code Check', '0.0.10');
   }
 
   /**
