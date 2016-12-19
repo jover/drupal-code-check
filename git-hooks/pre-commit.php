@@ -408,6 +408,10 @@ class DrupalBlacklistedStringsCheck extends DrupalCodeCheck {
       $succeed = FALSE;
     }
 
+    if ($succeed) {
+      $this->output->writeln('No blacklisted strings found.');
+    }
+
     return $succeed;
   }
 
@@ -427,7 +431,7 @@ class DrupalCodeCheckApplication extends Application {
    * {@inheritdoc}
    */
   public function __construct() {
-    parent::__construct('Drupal Code Check', '0.0.6');
+    parent::__construct('Drupal Code Check', '0.0.9');
   }
 
   /**
