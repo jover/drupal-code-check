@@ -36,7 +36,7 @@ Note that files of the following origins are **not checked**:
 Add this project as a composer dependency on your Composer based Drupal project.
 
 ```bash
-composer require jover_be/drupal-code-check
+composer require --dev jover_be/drupal-code-check
 ```
 
 And don't forget to update...
