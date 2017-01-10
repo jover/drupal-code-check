@@ -13,7 +13,7 @@ use Symfony\Component\Filesystem\Filesystem;
 class GitHooks {
 
   protected static function getProjectRoot() {
-    return getcwd();
+    return dirname(__FILE__);
   }
 
   protected static function getGitHooksOriginDirectory() {
