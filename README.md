@@ -75,16 +75,16 @@ And instead, you should be using the _scripts-dev_ part as described by
 
 ```
 {
-	"extra": {
-		"scripts-dev": {
-			"post-install-cmd": [
-				"jover_be\\drupal_code_check\\GitHooks::create"
-			],
-			"post-update-cmd": [
-				"jover_be\\drupal_code_check\\GitHooks::create",
-			]
-		}
-	}
+    "extra": {
+        "scripts-dev": {
+            "post-install-cmd": [
+                "jover_be\\drupal_code_check\\GitHooks::create"
+            ],
+            "post-update-cmd": [
+                "jover_be\\drupal_code_check\\GitHooks::create",
+            ]
+        }
+    }
 }
 ```
 
