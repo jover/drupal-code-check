@@ -36,7 +36,7 @@ Note that files of the following origins are **not checked**:
 Add this project as a composer dependency on your Composer based Drupal project.
 
 ```bash
-composer require --dev jover_be/drupal-code-check
+composer require jover_be/drupal-code-check
 ```
 
 And don't forget to update...
@@ -57,6 +57,34 @@ In order to activate the Git Hooks, update your composer.json file like followin
         	"jover_be\\drupal_code_check\\GitHooks::create",
         ]
     }
+}
+```
+
+#### Development requirement
+
+In case you want to install it as a development requirement (_require-dev_),
+make use of the project _neronmoon/scriptsdev_ in order to execute the
+scripts only in case your project was installed in development mode.
+
+```bash
+composer require --dev neronmoon/scriptsdev
+composer require --dev jover_be/drupal-code-check
+```
+
+And instead, you should be using the _scripts-dev_ part as described by 
+
+```
+{
+	"extra": {
+		"scripts-dev": {
+			"post-install-cmd": [
+				"jover_be\\drupal_code_check\\GitHooks::create"
+			],
+			"post-update-cmd": [
+				"jover_be\\drupal_code_check\\GitHooks::create",
+			]
+		}
+	}
 }
 ```
 
