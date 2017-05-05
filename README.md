@@ -54,7 +54,7 @@ In order to activate the Git Hooks, update your composer.json file like followin
             "jover_be\\drupal_code_check\\GitHooks::create"
         ],
         "post-update-cmd": [
-        	"jover_be\\drupal_code_check\\GitHooks::create",
+        	"jover_be\\drupal_code_check\\GitHooks::create"
         ]
     }
 }
@@ -81,7 +81,7 @@ And instead, you should be using the _scripts-dev_ part as described by
                 "jover_be\\drupal_code_check\\GitHooks::create"
             ],
             "post-update-cmd": [
-                "jover_be\\drupal_code_check\\GitHooks::create",
+                "jover_be\\drupal_code_check\\GitHooks::create"
             ]
         }
     }
